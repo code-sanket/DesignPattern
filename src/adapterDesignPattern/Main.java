@@ -6,5 +6,9 @@ public class Main {
         UsbCCharger adapter = new AdapterClass(oldCharger);
         Phone phone = new Phone(adapter);
         phone.charge();
+
+        LightningCableCharger lightningCableCharger = new LightningCableCharger();
+        TypeCCharger charger = new AdapterClassForLightningToTypeC(lightningCableCharger);
+        charger.charge();
     }
 }
