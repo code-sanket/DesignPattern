@@ -2,7 +2,9 @@ package singletonPattern;
 
 public class SingeltonPrep {
 
-    private SingeltonPrep singeltonPrep;
+    private SingeltonPrep (){
+
+    };
 
     private static volatile SingeltonPrep onlyInstance;
 
